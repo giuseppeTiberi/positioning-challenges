@@ -13,7 +13,8 @@
 				width:960px;	/*to center an element it must have a fixed width*/
 				border-radius: 10px;
 				padding: 10px;
-				font-size: 0; /* font-size:0 removes problem spaceing issue for inline-block*/
+				font-size: 0; /* font-size:0 removes problem spaceing issue for inline-block*/ 
+
 			}
 			.box{
 				display:block;
@@ -32,24 +33,44 @@
 				width: 475px;
 				height: 320px;
 				margin-right: 5px;
+				padding-left: 40px;
+				padding-right: 40px;
+				box-sizing: border-box;
+
 			}
+	
 			#content{
 				display: inline-block;
 				width: 475px;
 				height: 320px;
 				margin-left: 5px;
+				padding-left: 40px;
+				padding-right: 40px;
+				box-sizing: border-box;
 			}
-
+			
 
 		</style>
 	</head>
 	<body>
 		<div id="container">
 
-			<div id="header" class="box"> <h1>Header</h1>
-			</div><div id="sidebar" class="box"><h2>Sidebar</h2>
-			</div><div id="content" class="box"><h2>Content</h2>
-			</div><div id="footer" class="box"><h2>Footer</h2>
+			<div id="header" class="box">
+				<h1>Header</h1>
+			</div>
+
+			<div id="sidebar" class="box sidebar">
+				<h2>Sidebar</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vestibulum lorem metus, vitae tincidunt magna eleifend vel. Nunc et libero erat. Aliquam interdum auctor eros sed maximus. Curabitur bibendum diam nec est interdum, vitae consectetur ligula aliquam. Phasellus efficitur lectus non nisl fermentum lobortis.</p>
+			</div>
+
+			<div id="content" class="box content">
+				<h2>Content</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vestibulum lorem metus, vitae tincidunt magna eleifend vel. Nunc et libero erat. Aliquam interdum auctor eros sed maximus. Curabitur bibendum diam nec est interdum, vitae consectetur ligula aliquam. Phasellus efficitur lectus non nisl fermentum lobortis.</p>
+			</div>
+
+			<div id="footer" class="box">
+				<h2>Footer</h2>
 			</div>
 
 		</div>
