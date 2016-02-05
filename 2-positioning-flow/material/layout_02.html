@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Positioning Flow</title>
+		<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+		<style type="text/css">
+
+			body{
+				font-family: roboto;
+				font-size: 12px;
+			}
+
+			#container
+			{
+				margin-top: 150px;
+				margin-right:auto; /*center container with margins left & right set to auto*/
+				margin-left:auto;
+				width:960px;	/*to center an element it must have a fixed width*/
+				height: 200px;
+				background-color:#AA4639;
+				border-radius: 10px;
+				padding: 10px;
+				font-size: 0;	/* remove inline-block spacing*/
+			}
+			.box{
+				display: inline-block;
+				width: 220px;
+				height: 150px;
+				text-align: center;
+				background-color: #81BBC9;
+				margin:10px;
+				border-radius:10px;
+				font-size: 35px;
+			}
+			#box1 {
+				position: absolute;
+				left: 380px;
+				top: 350px;
+			}
+			#box2 {
+				position: absolute;
+				left: 630px;
+				top: 250px;
+			}
+			#box3 {
+				position: absolute;
+				left: 880px;
+				top: 150px;
+			}
+			#box4 {
+				position: absolute;
+				left: 1130px;
+				top: 50px;
+			}
+
+
+		</style>
+	</head>
+	<body>
+		<div id="container">
+
+			<div id="box1" class="box"><h2>1</h2></div>
+			<div id="box2" class="box"><h2>2</h2></div>
+			<div id="box3" class="box"><h2>3</h2></div>
+			<div id="box4" class="box"><h2>4</h2></div>
+
+		</div>
+	</body>
+</html>
